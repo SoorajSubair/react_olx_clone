@@ -22,7 +22,7 @@ export default function Signup() {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Please fill the componendts!',
+        text: 'Please fill all fields!',
         
       })
     }else
