@@ -26,7 +26,7 @@ function Header() {
     }).then((result) => {
       if (result.isConfirmed) {
         firebase.auth().signOut();
-        history.push('/login')
+        history.push('/')
       }
     })
   }
@@ -58,7 +58,7 @@ function Header() {
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
-          <span>{user ? `Welcome ${user.displayName}` : <a onClick={()=>history.push('/login')}>Login</a>}</span>
+          <span>{user ? `Welcome ${user.displayName}` : <a className='login' onClick={()=>history.push('/login')}>Login</a>}</span>
           <hr />
 
         </div>

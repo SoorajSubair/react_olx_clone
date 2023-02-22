@@ -18,7 +18,7 @@ export default function Signup() {
 
   const handleSubmit =(e)=>{
     e.preventDefault();
-    if(username=="" || email=="" || phone=="" || password==""){
+    if(username==="" || email==="" || phone==="" || password===""){
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -46,7 +46,7 @@ export default function Signup() {
   return (
     <div>
       <div className="signupParentDiv">
-        <img width="200px" height="200px" src={Logo}></img>
+        <img alt='logo' width="200px" height="200px" src={Logo}></img>
         <form onSubmit={handleSubmit}>
           <label htmlFor="fname">Username</label>
           <br />
@@ -99,9 +99,9 @@ export default function Signup() {
           <br />
           <button>Signup</button>
         </form>
-        <a onClick={()=>{
+        <button onClick={()=>{
           history.push('/login')
-        }}>Login</a>
+        }}>Login</button>
       </div>
     </div>
   );

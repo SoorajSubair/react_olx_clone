@@ -200,3 +200,8 @@
 .button-24:active {
   opacity: .5;
 }
+
+.login{
+  cursor: pointer;
+  color: #000000;
+}
